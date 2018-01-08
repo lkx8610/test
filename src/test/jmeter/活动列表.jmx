@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="3.1" jmeter="3.1 r1770033">
+  <hashTree>
+    <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP请求" enabled="true">
+      <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="HTTPSampler.domain">192.168.0.17</stringProp>
+      <stringProp name="HTTPSampler.port">8080</stringProp>
+      <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+      <stringProp name="HTTPSampler.response_timeout"></stringProp>
+      <stringProp name="HTTPSampler.protocol">http</stringProp>
+      <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+      <stringProp name="HTTPSampler.path">/activity/search?page=1&amp;rows=&amp;totalPage=&amp;total=&amp;activityName=&amp;startTime=&amp;endTime=</stringProp>
+      <stringProp name="HTTPSampler.method">GET</stringProp>
+      <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+      <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+      <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+      <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+      <stringProp name="HTTPSampler.implementation">Java</stringProp>
+      <boolProp name="HTTPSampler.monitor">false</boolProp>
+      <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+      <stringProp name="TestPlan.comments">http://192.168.0.17:8080/activity/search?page=1&amp;rows=&amp;totalPage=&amp;total=&amp;activityName=&amp;startTime=&amp;endTime=   活动列表</stringProp>
+    </HTTPSamplerProxy>
+    <hashTree/>
+  </hashTree>
+</jmeterTestPlan>
