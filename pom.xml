@@ -45,7 +45,7 @@
                           <configuration>
                       <testFilesIncluded>
                           <jMeterTestFile>baidu.jmx</jMeterTestFile>
-                         
+                          <jMeterTestFile>renamePassword.jmx</jMeterTestFile>
                       </testFilesIncluded>
                  </configuration>
                     </execution>
