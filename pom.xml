@@ -3,13 +3,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.performance.test</groupId>
-    <artifactId>PerformanceTest</artifactId>
+    <artifactId>jmeter</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
    <!-- <name>appBaidu</name> --> 
    
-    <name>PerformanceTest</name>
+    <name>jmeter</name>
     <url>http://maven.apache.org</url>
 
     <properties>
@@ -34,13 +34,20 @@
             <plugin>
                 <groupId>com.lazerycode.jmeter</groupId>
                 <artifactId>jmeter-maven-plugin</artifactId>
-                <version>2.1.0</version>
+                <version>2.6.0</version>
                 <executions>
                     <execution>
+                       <phase>verify</phase>
                         <id>jmeter-tests</id>
                         <goals>
                             <goal>jmeter</goal>
                         </goals>
+                          <configuration>
+                      <testFilesIncluded>
+                          <jMeterTestFile>baidu.jmx</jMeterTestFile>
+                         
+                      </testFilesIncluded>
+                 </configuration>
                     </execution>
                 </executions>
             </plugin>
@@ -50,10 +57,11 @@
                 <version>1.0-beta-3</version>
                 <executions>
                     <execution>
-                        <phase>verify</phase>
-                        <goals>
-                            <goal>transform</goal>
+                    <phase></phase>
+                        <goals>                        
+                      <goal>transform</goal>
                         </goals>
+                       
                     </execution>
                 </executions>
                 <configuration>
