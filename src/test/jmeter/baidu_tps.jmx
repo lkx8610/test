@@ -172,7 +172,7 @@
         <hashTree/>
         <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Step 1" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
-          <stringProp name="LoopController.loops">20</stringProp>
+          <stringProp name="LoopController.loops">1</stringProp>
         </LoopController>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://www.baidu.com/" enabled="true">
